@@ -14,10 +14,12 @@ namespace _001
             for (int i = 0; i < top; i++)
                 numbers[i] = i;
 
+            //get collection with right numbers
             var coll = (from item in numbers
                         where item % 3 == 0 || item % 5 == 0
                         select item);
 
+            //calculate sum of this numbers
             ans = coll.Sum();
 
             return ans;
