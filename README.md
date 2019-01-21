@@ -1,5 +1,5 @@
 
-[![Logo](https://raw.githubusercontent.com/verloka/SQLFromZero/master/merch/logo.jpg)](https://github.com/verloka/Project-Euler)
+[![Logo](https://raw.githubusercontent.com/verloka/Project-Euler/master/march/logo.jpg)](https://github.com/verloka/Project-Euler)
 
 # Project Euler
 **[projecteuler.net](https://projecteuler.net/)**
