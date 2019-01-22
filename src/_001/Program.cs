@@ -30,7 +30,7 @@ namespace _001
             Console.BackgroundColor = ConsoleColor.White;
             Console.ForegroundColor = ConsoleColor.Black;
             Console.Clear();
-            Console.WriteLine("BProject Euler. Verloka Vadim, 2019");
+            Console.WriteLine("Project Euler. Verloka Vadim, 2019");
             Console.WriteLine(new string('-', 50));
 
 
