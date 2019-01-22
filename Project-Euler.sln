@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00-20", "00-20", "{132BF02D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_001", "src\_001\_001.csproj", "{5EBB3395-49B1-4949-B0A4-9CD6D3A537D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_002", "_002\_002.csproj", "{382FB827-7B76-4240-93B5-38C02F0906E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_002", "src\_002\_002.csproj", "{382FB827-7B76-4240-93B5-38C02F0906E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
