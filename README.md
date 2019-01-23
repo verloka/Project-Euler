@@ -1,8 +1,10 @@
 
 [![Logo](https://raw.githubusercontent.com/verloka/Project-Euler/master/march/logo.jpg)](https://github.com/verloka/Project-Euler)
 
-# Project Euler
-**[projecteuler.net](https://projecteuler.net/)**
+# Project Euler 
+[![stat](https://projecteuler.net/profile/verloka.png)](https://projecteuler.net/)
+
+
 
 ## <a name="top"></a>Problems
 
