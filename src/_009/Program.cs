@@ -1,57 +1,61 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _009
 {
     class Program
     {
 
-        //a = 2m + 1
-        //b = 2m(m + 1) = 2m^2 + 2m
-        //c = 2m^2 + 2m +1
+        //Euclid's formula
+        //a = m^2 - n^2
+        //b = 2mn
+        //c = m^2 + n^2
 
         //a + b + c = 1000
-        //(2m + 1) + (2m^2 + 2m) + (2m^2 + 2m +1) = 1000
-        //4m^2 + 6m + 2 = 1000
-        //4m^2 + 6m - 998 = 0
+        //k*(m^2 - n^2) + k*(2mn) + k*(m^2 + n^2) = 1000
+        //km^2 - kn^2 + 2kmn + km^2 + kn^2 = 1000
+        //2km^2 + 2mnk = 1000
+        //2km(m + n) = 1000 | : 2
+        //km(m + n) = 500   | x = m + n
+        //kmx = 500
+        // m > n
+        // m < x < 2m
 
 
-        static List<double> GetM(int a, int b, int c)
+        static List<int> GetDeviders(int num)
         {
-            //b^2 - 4ac
-            double D = Math.Pow(b, 2) - 4 * a * c;
+            List<int> list = new List<int>();
 
-            //(-b + D^1/2) / 2a
-            double x1 = ((-b) + Math.Sqrt(D)) / 2 * a;
-            //(-b - D^1/2) / 2a
-            double x2 = ((-b) - Math.Sqrt(D)) / 2 * a;
+            for (int i = 1; i <= num; i++)
+                if (num % i == 0)
+                    list.Add(i);
 
-            return new List<double>
-            {
-                x1,
-                x2
-            };
+            return list;
         }
 
 
-        static Tuple<double, double, double, double> GetAnswer()
+        static Tuple<int, int, int, int> GetAnswer()
         {
-            foreach (var m1 in GetM(4, 6, -998))
-            {
-                int m = 4;
+            int num = 500;
+            var dividers = GetDeviders(num);
 
-                double a = 2 * m + 1;
-                double b = 2 * Math.Pow(m, 2) + 2 * m;
-                double c = 2 * Math.Pow(m, 2) + 2 * m + 1;
+            foreach (var m in dividers)
+                foreach (var x in dividers)
+                    if( m < x && x < 2*m)
+                    {
+                        int n = x - m;
+                        int k = (num / m) / x;
 
-                if (a + b + c == 1000)
-                    return new Tuple<double, double, double, double>(a, b, c, a * b * c);
-            }
+                        int a = k * (m * m - n * n);
+                        int b = k * 2 * m * n;
+                        int c = k * (m * m + n * n);
 
-            return new Tuple<double, double, double, double>(-1, -1, -1, -1);
+                        if ((a + b + c) == 1000)
+                            return new Tuple<int, int, int, int>(a, b, c, a * b * c);
+                    }
+
+
+            return new Tuple<int, int, int, int>(-1, -1, -1, -1);
         }
 
         static void Main(string[] args)

@@ -2,7 +2,7 @@
 [![Logo](https://raw.githubusercontent.com/verloka/Project-Euler/master/march/logo.jpg)](https://github.com/verloka/Project-Euler)
 
 # Project Euler
-[![stat](https://projecteuler.net/profile/verloka.png?7)](https://projecteuler.net/)
+[![stat](https://projecteuler.net/profile/verloka.png?9)](https://projecteuler.net/)
 
 
 
@@ -15,3 +15,5 @@
  * 005.[ Smallest multiple](https://github.com/verloka/Project-Euler/tree/master/src/_005) ([C#](https://github.com/verloka/Project-Euler/blob/master/src/_005/Program.cs))
  * 006.[ Sum square difference](https://github.com/verloka/Project-Euler/tree/master/src/_006) ([C#](https://github.com/verloka/Project-Euler/blob/master/src/_006/Program.cs))
  * 007.[ 10001st prime](https://github.com/verloka/Project-Euler/tree/master/src/_007) ([C#](https://github.com/verloka/Project-Euler/blob/master/src/_007/Program.cs))
+ * 008.[ Largest product in a series](https://github.com/verloka/Project-Euler/tree/master/src/_008) ([C#](https://github.com/verloka/Project-Euler/blob/master/src/_008/Program.cs))
+ * 009.[ Special Pythagorean triplet](https://github.com/verloka/Project-Euler/tree/master/src/_009) ([C#](https://github.com/verloka/Project-Euler/blob/master/src/_009/Program.cs))
